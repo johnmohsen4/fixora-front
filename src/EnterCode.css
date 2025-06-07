@@ -1,0 +1,102 @@
+.enter-code-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.enter-code-content {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  color: #d4722b;
+  font-weight: 600;
+  margin-bottom: 80px;
+  letter-spacing: -0.5px;
+}
+
+.code-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.code-input {
+  width: 100%;
+  max-width: 350px;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  background-color: #e0e0e0;
+  color: #666;
+  outline: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.code-input:focus {
+  background-color: #d5d5d5;
+  color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.code-input::placeholder {
+  color: #888;
+  font-size: 16px;
+}
+
+.verify-button {
+  background: linear-gradient(135deg, #5a9fd4, #4a8bc2);
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(90, 159, 212, 0.3);
+}
+
+.verify-button:hover {
+  background: linear-gradient(135deg, #4a8bc2, #3a7bb2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(90, 159, 212, 0.4);
+}
+
+.verify-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(90, 159, 212, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .enter-code-container {
+    padding: 20px 15px;
+  }
+  
+  .app-title {
+    font-size: 2rem;
+    margin-bottom: 60px;
+  }
+  
+  .code-input {
+    max-width: 300px;
+    padding: 12px 16px;
+    font-size: 15px;
+  }
+  
+  .verify-button {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+}

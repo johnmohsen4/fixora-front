@@ -1,0 +1,164 @@
+.worker-signup-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.worker-signup-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ff6b35;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+  font-weight: normal;
+}
+
+.profile-picture-section {
+  margin-bottom: 30px;
+}
+
+.profile-picture-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: #d1d5db;
+  border-radius: 10px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.plus-icon {
+  font-size: 30px;
+  color: #6b7280;
+  font-weight: bold;
+}
+
+.profile-preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.profile-text {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  background-color: #d1d5db;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder {
+  color: #6b7280;
+}
+
+.form-input:focus {
+  background-color: #c4c9d4;
+  outline: none;
+}
+
+.create-account-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #4a90a4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.create-account-btn:hover {
+  background-color: #3a7a8c;
+}
+
+.login-link {
+  margin-top: 20px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.login-text {
+  color: #4a90a4;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.login-text:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .worker-signup-form {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+  
+  .logo {
+    font-size: 36px;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+  }
+}
